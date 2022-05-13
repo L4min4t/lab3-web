@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Бургена №1</title>
+    <link rel="icon" type="image/x-icon" href="images/site-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;399;400;600&display=swap" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img class="logo-img" src="images/logo.png" alt="logo"></a>
+            <div class="logo-name">
+                <a href="index.html">Бургена №1</a>
+                <a href="index.html">в твоєму місті</a>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <a class="anim" href="index.html">Головна</a>
+            <a class="anim" href="menu.html">Меню</a>
+            <a class="underlined" href="find-us.html">Знайти нас</a>
+        </div>
+        <div class="cp-phone">
+            <button id="phone" class="phone" onclick="copyToClipBoard()" onmouseout="cpAgain()"><span class="hint" id="my-hint">Скопіювати</span>0-800-000-000</button>
+        </div>
+        <div class="mobile-menu">
+            <input type="checkbox" id="op"></input>
+            <div class="lower">
+                <label class="lover" for="op"><img class="menu-ico" src="images/menu.png"></img></label>
+                </div>
+                <div class="overlay overlay-hugeinc">
+                    <label for="op"></label>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Головна</a></li>
+                            <li><a href="menu.html">Меню</a></li>
+                            <li><a href="find-us.html">Знайти нас</a></li>
+                            <li><a>0-800-000-000</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </div>
+        
+    </nav>
+
+    <h1 class="our-branches">Наші відділення</h1>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.569558456315!2d30.46021525597019!3d50.449117828318045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce8314fdfde3%3A0xd09dbe758a8cc765!2z0JrQn9CGINGW0LwuINCG0LPQvtGA0Y8g0KHRltC60L7RgNGB0YzQutC-0LPQviDQmtC-0YDQv9GD0YEgNSDQotCV0KQ!5e0!3m2!1sru!2sua!4v1652197349910!5m2!1sru!2sua"class="my-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+
+    <select class="my-sel">
+        <option value="1">Відділення №1</option>
+        <option value="2">Відділення №2</option>
+        <option selected value="3">Відділення №3</option>
+        <option value="4">Відділення №4</option>
+        <option value="5">Відділення №5</option>
+    </select>
+    <p class="branch-info">вулиця Металістів, 7<br>тел. +38000000000<br>менеджер Андрій</p>
+
+    <div class="footer">
+        <div class="contacts">
+            <div class="cp-phone">
+                <button class="phone" onclick="copyToClipBoardF()" onmouseout="cpAgainF()"><span class="hint" id="my-hint-footer">Скопіювати</span>0-800-000-000</button>
+            </div>
+            <a class="text-24 bold-text dont-do-this" href="find-us.html">Знайти нас</a>
+        </div>
+        <div class="logo">
+            <a href="index.html"><img class="logo-img" src="images/logo.png" alt="logo"></a>
+            <div class="logo-name">
+                <a href="index.html">Бургена №1</a>
+                <a href="index.html">в твоєму місті</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
